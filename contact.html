@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Contact | Maria Francis-Moullier</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -10,44 +11,59 @@
 
 <body>
 
-  <header id="masthead">
+    <!-- Header layout with Name logo and Navbar -->
     <div class="container">
-      <a href="index.html" id="logo">Maria Francis-Moullier</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <div class="row masthead">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="logo">
+          <h1>Maria Francis-Moullier</h1>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center text-md-right" id="navsection">
+          <br>
+          <nav class="nav justify-content-center justify-content-md-end">
+            <a href="index.html">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
     </div>
-  </header>
+    <br>
 
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>Contact</h1>
+      <h1 class="sectionheadingtext">Contact</h1>
 
       <form id="contact-form">
         <ul>
           <li>
             <label for="name">Name</label>
+            <br>
             <input type="text" id="name" name="name" placeholder="John Smith" required="required">
           </li>
           <li>
             <label for="email">Email</label>
+            <br>
             <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
           </li>
           <li>
             <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
+            <br>
+            <textarea id="message" rows="12" name="message" required="required"></textarea>
+          </li>
+          <li>
+              <input type="submit" id="submitbutton">
           </li>
         </ul>
-        <input type="submit">
+
       </form>
 
+      <br>
     </section>
 
   </div>
+  <br>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       Copyright &copy; 
     </div>

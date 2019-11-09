@@ -10,7 +10,11 @@ body {
 
 /* Styling for the heading bar */
 
-
+.masthead {
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #cccccc;
+}
 
 #logo {
 
@@ -35,6 +39,10 @@ h1 {
     float: right;
 }
 
+a {
+  color: #777777;
+}
+
 
 #main-container {
     background-color: #ffffff;
@@ -48,6 +56,61 @@ h1 {
     padding-right: 20px;
 }
 
-p{
-    padding-left: 10px;
+p {
+  padding-left: 10px;
+}
+
+.sectionheadingtext {
+  color: #4aaaa5;
+  border-bottom-style: solid;
+  border-bottom-color: #dddddd;
+}
+
+/* Portfolio Styling */
+
+.work {
+  position: relative;
+}
+
+.figcaption {
+  position: absolute;
+  top: 75%;
+  /* left: 0; */
+  width: 100%;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  background-color: #4aaaa5;
+  color: #cccccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#name, #email, #message{
+  width: 95%;
+}
+
+label{
+  padding-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#submitbutton {
+  background-color: #4aaaa5;
+  color: #ffffff;
+
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+}
+
+.footer {
+  width:100%;
+  background-color: #666666;
+  border-top: 8px solid #4aaaa5;
+  text-align: center;
+  color: #cccccc;
 }
