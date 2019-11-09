@@ -48,9 +48,13 @@ a {
     background-color: #ffffff;
 }
 
+#mypicture {
+  float: left;
+}
+
 .auth-image {
     float: left;
-    width: 200px;
+    /* width: 200px; */
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -113,4 +117,11 @@ ul {
   border-top: 8px solid #4aaaa5;
   text-align: center;
   color: #cccccc;
+}
+
+@media only screen and (max-width: 600px) {
+  #mypicture {
+    width: 100%;
+    
+  }
 }
