@@ -74,6 +74,7 @@ p {
 
 .work {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .figcaption {
@@ -111,13 +112,26 @@ ul {
   border: none;
 }
 
+/* Sticky footer styling */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 40px; /* Margin bottom by footer height */
+}
+
 .footer {
   width:100%;
+  position: absolute;
+  bottom: 0;
+  height: 40px; /* Set the fixed height of the footer here */
   background-color: #666666;
   border-top: 8px solid #4aaaa5;
   text-align: center;
   color: #cccccc;
 }
+
 
 @media only screen and (max-width: 600px) {
   #mypicture {
@@ -125,3 +139,12 @@ ul {
     
   }
 }
+
+/*
+@media only screen and (min-width: 992px) {
+  #main-container {
+    width: 80%;
+    margin-left: 20px;
+
+  }
+}*/
